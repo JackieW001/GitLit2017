@@ -12,7 +12,7 @@ public class NPC{
     npcID = paramNpcID;
   }
   
-  public NPC(int paramNpcID, String[] allLines) {
+  public NPC(int paramNpcID, String[] dialogueSet) {
     this(paramNpcID);
     dialogue = allLines;
   }
