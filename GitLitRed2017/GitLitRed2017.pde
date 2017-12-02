@@ -4,14 +4,12 @@ int stage;
 int storyStage;
 Main main;
 Dialogue dialogue;
+Grid grid;
 
 void setup(){
   size(600,600);
   main = new Main();
-  ArrayList<String> d = new ArrayList<String>();
-  d.add("The quick brown fox jumped over the lazy dog.");
-  d.add("Why did he jump?");
-  d.add("Who knows");
+  String[] d = {"The quick brown fox jumped over the lazy dog.", "Why did he jump?", "Who knows"};
   dialogue = new Dialogue(d);
 }
 

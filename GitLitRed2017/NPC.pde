@@ -14,7 +14,7 @@ public class NPC{
   
   public NPC(int paramNpcID, String[] dialogueSet) {
     this(paramNpcID);
-    dialogue = allLines;
+    dialogue = dialogueSet;
   }
   
   public String[] interact(){

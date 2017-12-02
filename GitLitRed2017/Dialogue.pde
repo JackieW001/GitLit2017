@@ -1,10 +1,11 @@
 class Dialogue {
   
-  ArrayList<String> lines = new ArrayList<String>();
+  String[] lines;
   int dctr;
   
-  public Dialogue(ArrayList<String> l){
-    lines = l;
+  public Dialogue(String[] l){
+    int s = l.length;
+    lines = new String[s];
     dctr = 0;
   }
   
@@ -24,8 +25,8 @@ class Dialogue {
       // text
       textSize(25);
       fill(0);
-      if (dctr < lines.size()){
-        text(lines.get(dctr), 40, 450, width-70, height-400-40);  // Text wraps within text box
+      if (dctr < lines.length){
+        text(lines[dctr], 40, 450, width-70, height-400-40);  // Text wraps within text box
       }
     }
   }

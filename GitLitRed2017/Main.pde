@@ -2,6 +2,7 @@ public class Main{
   Map map;
   Player player;
   NPC npc;
+  Scarlett scarlett;
   
   public Main(){
     player = new Player();
