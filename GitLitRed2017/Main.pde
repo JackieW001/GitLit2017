@@ -4,17 +4,21 @@ public class Main{
   NPC npc;
   Scarlett scarlett;
   
+  final int tutorialLevel = 1;
+  final int honestRiddleLevel = 2;
+  
   public Main(){
     player = new Player();
     npc = new NPC();
   }
   
-  void go(int stage, int storyStage){
+  void go(int storyStage){
     //tutorial
-    if(stage == 1){
+    if(stage == tutorialLevel){
        //where am i??
        //oh hey are u lost woah ill help u --> tutorial starts
-       
+    }
+    else if(stage == honestRiddleLevel) {
     }
   }
   void display(){
