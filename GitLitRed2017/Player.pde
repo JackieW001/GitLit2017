@@ -7,13 +7,19 @@ public class Player{
   int bad;
   int good;
   
+  boolean isDialogue;
+  
   public Player(){
-    
+  }
+  void setDialogue(boolean newDialogue){
+    isDialogue = newDialogue;
   }
   
   void walk(int move){
-    y += moves[move][0]*10;
-    x += moves[move][1]*10;
+    if(!isDialogue){
+      y += moves[move][0]*10;
+      x += moves[move][1]*10;
+    }
   }
   void interact(){
     
