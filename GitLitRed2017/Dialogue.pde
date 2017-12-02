@@ -19,11 +19,17 @@ class Dialogue {
     
     if (main.player.isDialogue){
       // display player -- ellipse(106, 256, 100, 100);
-      fill(255, 0, 0);
-      ellipse(106, 256, 100, 100);
+      //fill(255, 0, 0);
+      //ellipse(106, 256, 100, 100);
+      
+      image(loadImage("./images/MC/Profile.jpg"), 56, 256, 150, 150);
+      
+      
       // display npc -- ellipse(456, 256, 100, 100);
-      fill(0, 0, 255);
-      ellipse(456, 256, 100, 100);
+      //fill(0, 0, 255);
+      //ellipse(456, 256, 100, 100);
+      
+      image(loadImage("./images/Scarlett/Profile.png"), 394, 256, 150, 150);
       // text
       textSize(25);
       fill(0);
