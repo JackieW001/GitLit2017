@@ -6,6 +6,7 @@ Main main;
 
 void setup(){
   size(600,600);
+  main = new Main();
 }
 
 void draw(){
@@ -13,4 +14,23 @@ void draw(){
      main.go(stage, storyStage);
      main.display();
   }
+  background(255);
+  main.display();
+}
+
+void keyPressed(){
+    if (key == CODED) {
+      if (keyCode == UP) {
+        main.player.walk(0);
+      }
+      if (keyCode == DOWN) {
+        main.player.walk(1);
+      }
+      if (keyCode == RIGHT) {
+        main.player.walk(2);
+      }
+      if (keyCode == LEFT) {
+        main.player.walk(3);
+      }
+    }
 }
