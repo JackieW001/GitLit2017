@@ -1,8 +1,10 @@
-int npc_person;
-
-void interact(){
+public class NPC{
+  int npc_person;
   
-}
-void go(){
-  
+  void interact(){
+    
+  }
+  void go(){
+    
+  }
 }

@@ -1,8 +1,12 @@
-Map map;
-
-void go(int stage, int storyStage){
+public class Main{
   
-}
-void display(){
+  Map map;
+  
+  void go(int stage, int storyStage){
+    
+  }
+  void display(){
+    
+  }
   
 }
