@@ -1,9 +1,11 @@
 public class Main{
   Map map;
   Player player;
+  NPC npc;
   
   public Main(){
     player = new Player();
+    npc = new NPC();
   }
   
   void go(int stage, int storyStage){
@@ -16,6 +18,7 @@ public class Main{
   }
   void display(){
     player.display();
+    npc.display();
   }
   
 }
