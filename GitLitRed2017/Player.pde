@@ -21,8 +21,13 @@ public class Player{
       x += moves[move][1]*10;
     }
   }
+  
   void interact(){
-    
+    //???
+  }
+  
+  void kill() {
+    //detects the npc that player is targeting and set the npc's isAlive field to false
   }
   
   void display(){
