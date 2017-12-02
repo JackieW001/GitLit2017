@@ -21,8 +21,9 @@ public class Player{
       x += moves[move][1]*10;
     }
   }
+  
   void interact(){
-    
+    //???
   }
   
   void kill() {

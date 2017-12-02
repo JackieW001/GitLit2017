@@ -8,8 +8,8 @@ public class Scarlett extends NPC{
     dialogue = dialogueSet;
   }
   
-  public void interact() {
-    
+  public String[] interact() {
+    return dialogue;
   }
   
 }
