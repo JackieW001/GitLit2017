@@ -3,6 +3,7 @@ public class Player{
   
   int x;
   int y;
+  int speed = 1;
   
   int bad;
   int good;
@@ -21,6 +22,51 @@ public class Player{
       x += moves[move][1]*10;
     }
   }
+  
+  void move () {
+    if (keyPressed) {
+
+      // "A" key, left
+      if (key == 'a' || keyCode == 37) {  
+        if (! grid.getVal((int)position.x - speed,(int)position.y) &&
+          ((int)position.x-speed) > 0) {
+          position.x -= speed;
+        }
+      }
+
+      // "S" key, down
+      if (key == 's' || keyCode == 40) { 
+        int chkCoord = (int)position.y + speed;
+        if (chkCoord < height) {
+          if (! grid.getVal((int)position.x,(int)position.y + speed) &&
+            ((int)position.y+speed < height)) { 
+            position.y += speed;
+          }
+        }
+      }
+
+      // "D" key, right
+      if (key == 'd' || keyCode == 39) { 
+        int chkCoord = (int)position.x + speed;
+        //println(chkCoord);
+        if (chkCoord < width) {
+          if (! grid.getVal((int)position.x + speed,(int)position.y) &&
+            ((int)position.x+speed < width)) {
+            position.x += speed;
+          }
+        } //if chkCoord
+      }
+
+      // "W" key, up
+      if (key == 'w' || keyCode == 38) {  
+        if (! grid.getVal((int)position.x,(int)position.y - speed) &&
+          ((int)position.y-speed > 0)) { 
+          position.y -= speed;
+        }
+      }
+    }
+  } // move
+  
   
   void interact(){
     //???

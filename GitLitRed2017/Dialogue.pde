@@ -30,6 +30,9 @@ class Dialogue {
       if (dctr < lines.length){
         text(lines[dctr], 40, 450, width-70, height-400-40);  // Text wraps within text box
       }
+      else{
+         main.player.setDialogue(false); 
+      }
     }
   }
 }

@@ -33,11 +33,11 @@ public class Main{
   
   void go(int storyStage){
     //tutorial
-    if(stage == tutorialLevel){
+    if(storyStage == tutorialLevel){
        //where am i??
        //oh hey are u lost woah ill help u --> tutorial starts
     }
-    else if(stage == honestRiddleLevel) {
+    else if(storyStage == honestRiddleLevel) {
     }
   }
   void display(){
