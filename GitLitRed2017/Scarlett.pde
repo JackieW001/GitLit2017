@@ -1,5 +1,4 @@
 public class Scarlett extends NPC{
-  
   int hp;
  
   public Scarlett(String[] dialogueSet) {
@@ -16,5 +15,7 @@ public class Scarlett extends NPC{
     }
     return false;
   }
-  
+   void display(){
+     image(loadImage("./images/Scarlett/Idle0.png"), x, y, 100, 100);
+   }
 }
