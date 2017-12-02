@@ -31,9 +31,12 @@ class Dialogue {
       
       image(loadImage("./images/Scarlett/Profile.png"), 394, 256, 150, 150);
       // text
-      textSize(25);
-      fill(0);
       if (dctr < lines.length){
+        fill(255);
+        stroke(28);
+        rect(30, 440, width-60, height-440-30, 10);
+        textSize(25);
+        fill(0);
         text(lines[dctr], 40, 450, width-70, height-400-40);  // Text wraps within text box
       }
       else{
