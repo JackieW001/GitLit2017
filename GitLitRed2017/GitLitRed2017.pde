@@ -1,6 +1,7 @@
 //0: menu
 //1: tutorial
 int storyStage;
+PImage bg;
 Main main;
 Dialogue dialogue;
 Grid grid;
@@ -8,6 +9,10 @@ Grid grid;
 void setup(){
   size(600,600);
   main = new Main();
+  bg = loadImage("images/grassland.png");
+  image(bg,0,0);
+  bg.resize(600,600);
+   
 }
 
 void draw(){
@@ -15,7 +20,7 @@ void draw(){
      main.go(storyStage);
      main.display();
   }
-  background(255);
+  background(bg);
   main.display();
   if(dialogue != null){
     dialogue.display();

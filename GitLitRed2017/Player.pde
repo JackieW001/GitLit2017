@@ -1,8 +1,8 @@
 public class Player{
   int[][] moves = {{-1, 0}, {1, 0}, {0, 1}, {0, -1}};
   
-  int x;
-  int y;
+  int x = 10;
+  int y = 400;
   
   int bad;
   int good;
@@ -23,7 +23,7 @@ public class Player{
       int newX = x + moves[move][1]*10;
       int newY = y + moves[move][0]*10;
       animateType = move;
-      if(newX >= 0 && newX <= width - 50 && newY >= 0 && newY <= height - 50 && !(dist(newX, newY, main.scarlett.x, main.scarlett.y)<50)){
+      if(newX >= 0 && newX <= width - 50 && newY >= 0 && newY >= 250 && !(dist(newX, newY, main.scarlett.x, main.scarlett.y)<50)){
         x = newX;
         y = newY;
       }
@@ -43,20 +43,36 @@ public class Player{
   }
   
   void display(){
+    int resize = 100;
     if (animateType == 0) {
-      image(loadImage("./images/MC/Up" + animateNum + ".png"), x, y);
+      PImage mc = new PImage();
+      mc = loadImage("./images/MC/Up" + animateNum + ".png");
+      mc.resize(0,resize);
+      image(mc, x, y);
     }
     if (animateType == 1) {
-      image(loadImage("./images/MC/Down" + animateNum + ".png"), x, y);
+      PImage mc = new PImage();
+      mc = loadImage("./images/MC/Down" + animateNum + ".png");
+      mc.resize(0,resize);
+      image(mc, x, y);
     }
     if (animateType == 2) {
-      image(loadImage("./images/MC/Right" + animateNum  + ".png"), x, y);
+      PImage mc = new PImage();
+      mc = loadImage("./images/MC/Right" + animateNum + ".png");
+      mc.resize(0,resize);
+      image(mc, x, y);
     }
     if (animateType == 3) {
-      image(loadImage("./images/MC/Left" + animateNum + ".png"), x, y);
+      PImage mc = new PImage();
+      mc = loadImage("./images/MC/Left" + animateNum + ".png");
+      mc.resize(0,resize);
+      image(mc, x, y);
     }
     if (animateType == 4) {  
-      image(loadImage("./images/MC/Still" + animateNum + ".png"), x, y);
+      PImage mc = new PImage();
+      mc = loadImage("./images/MC/Still" + animateNum + ".png");
+      mc.resize(0,resize);
+      image(mc, x, y);
     }
   }
 }

@@ -22,7 +22,7 @@ class Dialogue {
       //fill(255, 0, 0);
       //ellipse(106, 256, 100, 100);
       
-      image(loadImage("./images/MC/Profile.jpg"), 56, 256, 150, 150);
+      image(loadImage("./images/MC/Profile.png"), 56, 256, 150, 150);
       
       
       // display npc -- ellipse(456, 256, 100, 100);

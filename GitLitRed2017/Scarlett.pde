@@ -4,8 +4,8 @@ public class Scarlett extends NPC{
  
   public Scarlett(String[] dialogueSet) {
     super(0,dialogueSet);
-    x = 100;
-    y = 100;
+    x = 400;
+    y = 400;
     size = 50; 
   }
   
