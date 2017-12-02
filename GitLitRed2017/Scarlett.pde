@@ -9,13 +9,14 @@ public class Scarlett extends NPC{
   }
   
   boolean isInRange(Player player){
-    int radius = 70;
-    if (dist(player.x, player.y, this.x, this.y) < radius){
+    int radius = 60;
+    System.out.println(dist(player.x, player.y, this.x, this.y));
+    if (dist(player.x, player.y, this.x, this.y) <= radius){
       return true;
     }
     return false;
   }
    void display(){
-     image(loadImage("./images/Scarlett/Profile.png"), x, y, 100, 100);
+     image(loadImage("./images/Scarlett/Profile.png"), x, y, size, size);
    }
 }
