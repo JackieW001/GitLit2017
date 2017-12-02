@@ -3,12 +3,13 @@ public class Player{
   
   int x;
   int y;
-  int speed = 1;
   
   int bad;
   int good;
   
   boolean isDialogue;
+  
+  
   
   public Player(){
   }
@@ -20,9 +21,11 @@ public class Player{
     if(!isDialogue){
       int newY = y + moves[move][0]*10;
       int newX = x + moves[move][1]*10;
-      if(newX >= 0 && newX <= width - 50 && newY >= 0 && newY <= height - 50){
+      
+      if(newX >= 0 && newX <= width - 50 && newY >= 0 && newY <= height - 50 && !(dist(newX, newY, main.scarlett.x, main.scarlett.y)<50)){
         x = newX;
         y = newY;
+        
       }
     }
   }
