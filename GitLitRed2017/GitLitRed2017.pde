@@ -8,8 +8,6 @@ Grid grid;
 void setup(){
   size(600,600);
   main = new Main();
-  String[] d = {"The quick brown fox jumped over the lazy dog.", "Why did he jump?", "Who knows"};
-  //dialogue = new Dialogue(d);
 }
 
 void draw(){

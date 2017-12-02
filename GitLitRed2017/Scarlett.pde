@@ -11,7 +11,6 @@ public class Scarlett extends NPC{
   
   boolean isInRange(Player player){
     int radius = 70;
-    System.out.println(dist(player.x, player.y, this.x, this.y));
     if (dist(player.x, player.y, this.x, this.y) < radius){
       return true;
     }
