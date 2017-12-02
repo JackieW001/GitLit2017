@@ -43,7 +43,7 @@ public class Player{
   }
   
   void display(){
-    int resize = 100;
+    int resize = 50;
     if (animateType == 0) {
       PImage mc = new PImage();
       mc = loadImage("./images/MC/Up" + animateNum + ".png");
