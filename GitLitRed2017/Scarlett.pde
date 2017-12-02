@@ -16,6 +16,6 @@ public class Scarlett extends NPC{
     return false;
   }
    void display(){
-     image(loadImage("./images/Scarlett/Idle0.png"), x, y, 100, 100);
+     image(loadImage("./images/Scarlett/Profile.png"), x, y, 100, 100);
    }
 }

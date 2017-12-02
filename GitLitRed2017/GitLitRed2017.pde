@@ -46,7 +46,7 @@ void keyPressed(){
         main.player.walk(3);
       }
     }
-    if(main.scarlett.isInRange(main.player) && (key == 'f' || key == 'F') ){
+    if(main.scarlett.isInRange(main.player) && (key == 'f' || key == 'F' || key == ' ') ){
       main.player.setDialogue(true);
       String[] d = main.scarlett.interact();
       dialogue = new Dialogue(d);
