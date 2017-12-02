@@ -26,7 +26,7 @@ public class Player{
   }
   
   void display(){
-     rect(x, y, 50, 50); 
      fill(0);
+     rect(x, y, 50, 50); 
   }
 }
