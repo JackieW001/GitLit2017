@@ -7,6 +7,9 @@ Main main;
 void setup(){
   size(600,600);
   main = new Main();
+  
+  //debugging hmmm
+  //stage = 1;
 }
 
 void draw(){
