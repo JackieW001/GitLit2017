@@ -4,8 +4,9 @@ class Dialogue {
   int dctr;
   
   public Dialogue(String[] l){
-    int s = l.length;
-    lines = new String[s];
+//    int s = l.length;
+    lines = l;
+    
     dctr = 0;
   }
   
@@ -15,6 +16,7 @@ class Dialogue {
   
   //void display(Player p, NPC npc, ArrayList<String> lines){ --- for when we have sprites
   void display(){
+    
     if (main.player.isDialogue){
       // display player -- ellipse(106, 256, 100, 100);
       fill(255, 0, 0);

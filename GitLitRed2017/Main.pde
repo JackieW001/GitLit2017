@@ -7,6 +7,8 @@ public class Main{
   public Main(){
     player = new Player();
     npc = new NPC();
+    String[] d= {"Oh hey are you lost??", "I'll help you!", "DIEE!"};
+    scarlett = new Scarlett(d);
   }
   
   void go(int stage, int storyStage){

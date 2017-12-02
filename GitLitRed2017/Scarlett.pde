@@ -3,13 +3,12 @@ public class Scarlett extends NPC{
   int hp;
   
   
-  public Scarlett(int ID, String[] dialogueSet) {
-    ID = 0;
-    dialogue = dialogueSet;
+  public Scarlett(String[] dialogueSet) {
+    super(0,dialogueSet);
   }
-  
+  /*
   public void interact() {
     
-  }
+  }*/
   
 }
