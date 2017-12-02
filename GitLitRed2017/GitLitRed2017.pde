@@ -1,4 +1,3 @@
-int stage;
 //0: menu
 //1: tutorial
 int storyStage;
@@ -14,8 +13,8 @@ void setup(){
 }
 
 void draw(){
-  if(stage != 0){
-     main.go(stage, storyStage);
+  if(storyStage != 0){
+     main.go(storyStage);
      main.display();
   }
   background(255);
