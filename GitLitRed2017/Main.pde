@@ -25,7 +25,7 @@ public class Main{
   }
   void display(){
     player.display();
-    npc.display();
+    scarlett.display();
   }
   
 }

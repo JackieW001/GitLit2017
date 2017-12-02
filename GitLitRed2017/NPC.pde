@@ -1,8 +1,9 @@
 public class NPC{
   int npcID;
   String[] dialogue; //stores all dialogue, each element is a line of dialogue
-  int x = 100; 
-  int y = 100; 
+  int x; 
+  int y; 
+  int size;
   boolean isAlive = false;
   
   public NPC() {
@@ -26,7 +27,7 @@ public class NPC{
   void display() {
     if(isAlive) {
     fill(255);
-    rect(x, y, 50, 50);
+    rect(x, y, size, size);
     }
     
   }  
