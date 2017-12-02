@@ -18,12 +18,17 @@ public class Player{
   
   void walk(int move){
     if(!isDialogue){
-      y += moves[move][0]*10;
-      x += moves[move][1]*10;
+      int newY = y + moves[move][0]*10;
+      int newX = x + moves[move][1]*10;
+      if(newX >= 0 && newX <= width - 50 && newY >= 0 && newY <= height - 50){
+        x = newX;
+        y = newY;
+      }
     }
   }
   
   void move () {
+    /*
     if (keyPressed) {
 
       // "A" key, left
@@ -40,7 +45,7 @@ public class Player{
         if (chkCoord < height) {
           if (! grid.getVal((int)position.x,(int)position.y + speed) &&
             ((int)position.y+speed < height)) { 
-            position.y += speed;
+            position.y += speed; 
           }
         }
       }
@@ -64,7 +69,7 @@ public class Player{
           position.y -= speed;
         }
       }
-    }
+    }*/
   } // move
   
   
