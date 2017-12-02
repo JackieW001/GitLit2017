@@ -10,7 +10,7 @@ void setup(){
   size(600,600);
   main = new Main();
   String[] d = {"The quick brown fox jumped over the lazy dog.", "Why did he jump?", "Who knows"};
-  //dialogue = new Dialogue(d);
+  dialogue = new Dialogue(d);
 }
 
 void draw(){
@@ -20,15 +20,13 @@ void draw(){
   }
   background(255);
   main.display();
-  if(dialogue != null){
-    dialogue.display();
-  }
+  dialogue.display();
 }
+
 void mouseReleased(){
-  if(dialogue != null){
-    dialogue.updateCtr();
-  }
+  dialogue.updateCtr();
 }
+
 void keyPressed(){
     if (key == CODED) {
       if (keyCode == UP) {
@@ -43,10 +41,5 @@ void keyPressed(){
       if (keyCode == LEFT) {
         main.player.walk(3);
       }
-    }
-    if(key == 'f' || key == 'F'){
-      main.player.setDialogue(true);
-      String[] d = main.scarlett.interact();
-      dialogue = new Dialogue(d);
     }
 }
