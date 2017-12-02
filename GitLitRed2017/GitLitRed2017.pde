@@ -26,13 +26,13 @@ void draw(){
     dialogue.display();
   }
 }
-/*
+
 void mouseReleased(){
   if(dialogue != null){
     dialogue.updateCtr();
   }
 }
-*/
+
 void keyPressed(){
     if (key == CODED) {
       if (keyCode == UP) {
@@ -47,7 +47,7 @@ void keyPressed(){
       if (keyCode == LEFT) {
         main.player.walk(3);
       }
-    
+    }
     if(main.scarlett.isInRange(main.player) && (key == 'f' || key == 'F' || key == ' ') ){
       main.player.setDialogue(true);
       String[] d = main.scarlett.interact();
@@ -56,4 +56,4 @@ void keyPressed(){
     if(main.player.isDialogue && key == ' '){
       dialogue.updateCtr();
     }
-}
+  }
