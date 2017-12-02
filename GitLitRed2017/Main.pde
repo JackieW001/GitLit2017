@@ -16,7 +16,7 @@ public class Main{
   public Main(){
     player = new Player();
     npc = new NPC();
-    String[] d= {"??: Oh hey are you lost??", 
+    String[] d= {"", "??: Oh hey are you lost??", 
                 "??: I'll help you! My name is Scarlett.", 
                 "Scarlett: Welcome to Heaven. There is no escape." };
     scarlett = new Scarlett(d);
