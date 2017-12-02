@@ -23,7 +23,7 @@ public class Player{
       int newX = x + moves[move][1]*10;
       int newY = y + moves[move][0]*10;
       animateType = move;
-      if(newX >= 0 && newX <= width - 50 && newY >= 0 && newY >= 280 && !(dist(newX, newY, main.scarlett.x, main.scarlett.y)<50)){
+      if(newX >= 0 && newX <= width - 50 && newY <= height-60 && newY >= 280 && !(dist(newX, newY, main.scarlett.x, main.scarlett.y)<50)){
         x = newX;
         y = newY;
       }
