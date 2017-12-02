@@ -51,4 +51,7 @@ void keyPressed(){
       String[] d = main.scarlett.interact();
       dialogue = new Dialogue(d);
     }
+    if(main.player.isDialogue && key == ' '){
+      dialogue.updateCtr();
+    }
 }
