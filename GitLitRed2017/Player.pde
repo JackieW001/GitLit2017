@@ -25,6 +25,10 @@ public class Player{
     
   }
   
+  void kill() {
+    //detects the npc that player is targeting and set the npc's isAlive field to false
+  }
+  
   void display(){
      fill(0);
      rect(x, y, 50, 50); 
