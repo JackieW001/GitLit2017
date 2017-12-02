@@ -1,9 +1,20 @@
 public class NPC{
-  int npc_person;
+  int npcID;
+  String[] dialogue;
   
-  void interact(){
-    
+  public NPC(int paramNpcID) {
+    npcID = paramNpcID;
   }
+  
+  public NPC(int paramNpcID, String[] allLines) {
+    this(paramNpcID);
+    dialogue = allLines;
+  }
+  
+  public String[] interact(){
+    return dialogue;
+  }
+  
   void go(){
     
   }
