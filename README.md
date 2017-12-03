@@ -2,6 +2,8 @@
 Uses Processing 3.3.6
 ## Story
 *** Story Game Spoiler Alert ***
+
+
 You wake up in a forest, not remembering anything. A magical red fairy-like thing appears in front of you. It tells you she'll guide you throughout the game and that her name is Scarlett. 
 You go through the world solving puzzles.
 When you feel you are so close to escaping this world and returning home, Scarlett shows her true self. She was using you all this time!!!!! She needed someone to replace her position in this world so she could be free. 
